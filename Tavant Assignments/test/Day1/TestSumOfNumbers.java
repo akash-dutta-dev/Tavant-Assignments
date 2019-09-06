@@ -4,23 +4,26 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class SumOfNumbersTest {
+class TestSumOfNumbers {
+	
+	SumOfNumbers sumOfNumbers = new SumOfNumbers();
+
 
 	@Test
-	public void test1() {
+	public void testSumOfEvenNumbers() {
 		
-		int actualOutput= SumOfNumbers.SumOfEvenNumbers(1,10);
-		int expectedOutput=30;
-		assertEquals(expectedOutput, actualOutput);
+		int testSumOfEvenNumbersActualOutput= sumOfNumbers.SumOfEvenNumbers(1,10);
+		int testSumOfEvenNumbersExpectedOutput = 30;
+		assertEquals(testSumOfEvenNumbersExpectedOutput, testSumOfEvenNumbersActualOutput);
 	}
 	
 
 	@Test
-	public void test2() {
+	public void testSumOfOddNumbers() {
 		
-		int actualOutput = SumOfNumbers.SumOfOddNumbers(1,10);
-		int expectedOutput = 25;
-		assertEquals(expectedOutput, actualOutput);
+		int testSumOfOddNumbersActualOutput = sumOfNumbers.SumOfOddNumbers(1,10);
+		int testSumOfOddNumbersExpectedOutput = 25;
+		assertEquals(testSumOfOddNumbersExpectedOutput, testSumOfOddNumbersActualOutput);
 	}
 
 }

@@ -2,7 +2,10 @@ package Day1;
 
 public class MarksValidator_switch {
 	
-	public static String markGrade(int marks){
+	public String markGrade(int marks){
+		
+		if(marks < 0)
+			return "Marks cannot be Negative.";
 		
 		 String grade;
 		 
@@ -44,7 +47,9 @@ public class MarksValidator_switch {
 	
 	public static void main(String args[]){
 		
+		MarksValidator_switch marksValidator_switch = new MarksValidator_switch();
+		
 		int marks = 50;
-		System.out.println(markGrade(marks));
+		System.out.println(marksValidator_switch.markGrade(marks));
 	}
 }

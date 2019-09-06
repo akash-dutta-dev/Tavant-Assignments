@@ -4,13 +4,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class HelloWorldTest {
+class TestHelloWorld {
 
 	@Test
-	void test() {
-		String helloWorldTestGetMessageActualOutput = HelloWorld.getMessage();
-		String helloWorldTestGetMessageExpectedOutput = "Hello world!!!";	
-		assertEquals(helloWorldTestGetMessageExpectedOutput, helloWorldTestGetMessageActualOutput);;
+	void testgetMessage() {
+		
+		HelloWorld helloWorld = new HelloWorld();
+		
+		String testGetMessageActualOutput = helloWorld.getMessage();
+		String testGetMessageExpectedOutput = "Hello world!!!";	
+		assertEquals(testGetMessageExpectedOutput, testGetMessageActualOutput);;
 	}
 
 }

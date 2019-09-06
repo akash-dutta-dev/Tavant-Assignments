@@ -4,13 +4,22 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class TemperatureConverterTest {
+class TestTemperatureConverter {
+	
+	TemperatureConverter temperatureConverter = new TemperatureConverter();
 
 	@Test
-	void test() {
-		double actualOutput = TemperatureConverter.convertToFahrenheit(52.0);
-		double expectedOutput = 125.6;
-		assertEquals(expectedOutput, actualOutput);
+	void testConvertToFahrenheit() {
+		double testConvertToFahrenheitActualOutput = temperatureConverter.convertToFahrenheit(52.0);
+		double testConvertToFahrenheitExpectedOutput = 125.6;
+		assertEquals(testConvertToFahrenheitExpectedOutput, testConvertToFahrenheitActualOutput);
+	}
+	
+	@Test
+	void testConvertToCelsius() {
+		double testConvertToCelsiusActualOutput = temperatureConverter.convertToCelsius(32.0);
+		double testConvertToCelsiusExpectedOutput = 0.0;
+		assertEquals(testConvertToCelsiusExpectedOutput, testConvertToCelsiusActualOutput);
 	}
 
 }

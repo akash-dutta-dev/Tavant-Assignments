@@ -2,7 +2,7 @@ package Day1;
 
 public class SumOfNumbers {
 	
-	public static int  SumOfOddNumbers(int start,int end){
+	public int  SumOfOddNumbers(int start,int end){
 		
 		int sum=0;
 		for(int i=start;i<=end;i++){
@@ -14,7 +14,7 @@ public class SumOfNumbers {
 		
 	}
 	
-	public static int SumOfEvenNumbers(int start,int end){
+	public int SumOfEvenNumbers(int start,int end){
 		
 
 		int sum=0;
@@ -28,9 +28,11 @@ public class SumOfNumbers {
 	
 	public static void main(String[] args){
 		
+		SumOfNumbers sumOfNumbers = new SumOfNumbers();
+		
 		int start = 1, end = 10;
-		System.out.println(SumOfOddNumbers(start, end));
-		System.out.println(SumOfEvenNumbers(start, end));
+		System.out.println(sumOfNumbers.SumOfOddNumbers(start, end));
+		System.out.println(sumOfNumbers.SumOfEvenNumbers(start, end));
 		
 
 	}
