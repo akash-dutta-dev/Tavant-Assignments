@@ -8,9 +8,9 @@ class HelloWorldTest {
 
 	@Test
 	void test() {
-		String actualOutput = HelloWorld.getMessage();
-		String expectedOutput = "Hello world!!!";	
-		assertEquals(expectedOutput, actualOutput);;
+		String helloWorldTestGetMessageActualOutput = HelloWorld.getMessage();
+		String helloWorldTestGetMessageExpectedOutput = "Hello world!!!";	
+		assertEquals(helloWorldTestGetMessageExpectedOutput, helloWorldTestGetMessageActualOutput);;
 	}
 
 }
